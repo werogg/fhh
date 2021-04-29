@@ -1,5 +1,5 @@
 .background {
-    background-color: beige;
+    background-color: aliceblue;
 }
 
 .nav-custom {
@@ -9,4 +9,17 @@
 
 .nav-separation {
     padding-left: 2rem;
+}
+
+.up-space {
+    margin-top: 1.5rem;
+}
+
+.info {
+    background-color: aliceblue;
+    text-align: center;
+}
+
+.img-custom {
+    background-color: aqua;
 }
