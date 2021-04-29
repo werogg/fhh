@@ -1,5 +1,3 @@
-
-
 .background {
     background-color: beige;
 }
@@ -7,4 +5,8 @@
 .nav-custom {
     color: black;
     background-color: aliceblue;
+}
+
+.nav-separation {
+    padding-left: 2rem;
 }
