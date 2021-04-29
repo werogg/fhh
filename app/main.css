@@ -1,19 +1,10 @@
-nav ul {
-    list-style-type: none;
-    margin: 0;
-    padding-top: 1rem;
-    padding-left: 1.5rem;
-    padding-bottom: 1rem;
-    background-color: whitesmoke;
-    text-align: left;
-}
 
-li {
-    display: inline;
-    padding-left: 1.5rem;
-    padding-right: 1.5rem;
-}
 
 .background {
     background-color: beige;
+}
+
+.nav-custom {
+    color: black;
+    background-color: aliceblue;
 }
