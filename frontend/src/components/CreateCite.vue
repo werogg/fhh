@@ -1,15 +1,15 @@
 <template>
-  <div>
-    <p>Hola que tal</p>
-  </div>
+  <p>Test</p>
 </template>
 
 <script>
 export default {
-  name: 'MainPage'
+  name: 'CreateCite'
 }
 </script>
 
 <style scoped>
-
+{
+  text-align: left;
+}
 </style>
