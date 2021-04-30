@@ -13,6 +13,7 @@
 
 .up-space {
     margin-top: 1.5rem;
+
 }
 
 .info {
@@ -22,4 +23,5 @@
 
 .img-custom {
     background-color: aqua;
+    margin-bottom: 1.5rem;
 }
