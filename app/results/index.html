@@ -9,20 +9,52 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
     <link rel="stylesheet" href="../main.css">
     <link rel="stylesheet" href="results.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
-<body>
+
+
+<header class="header-background">
     <div id="app">
-        <nav class="navbar navbar-expand-sm nav-custom navbar-light">
+        <nav class="header-background navbar navbar-expand-sm navbar-light">
             <ul class="navbar-nav">
-                <li class="nav-item nav-separation font-weight-bold"><a class="navbar-brand nav-custom" href="../">{{ title }}</a></li>
+                <li class="nav-item nav-separation font-weight-bold"><a class="navbar-brand" href="../">{{ title }}</a></li>
                 <li class="nav-separation"></li>
-                <li class="nav-item nav-separation"><a class="nav-link nav-custom" href="../cite/">{{ cite }}</a></li>
-                <li class="nav-item nav-separation"><a class="nav-link nav-custom" href="../consult/">{{ specialist }}</a></li>
-                <li class="nav-item nav-separation"><a class="nav-link nav-custom" href="../results/">{{ results }}</a></li>
+                <li class="nav-item nav-separation"><a class="nav-link" href="../cite/">{{ cite }}</a></li>
+                <li class="nav-item nav-separation"><a class="nav-link" href="../consult/">{{ specialist }}</a></li>
+                <li class="nav-item nav-separation"><b><a class="nav-link" href="../results/">{{ results }}</a></b></li>
             </ul>
         </nav>
     </div>
+</header>
+<body class="background">
+
+<h1 class="title-cite" align="center">Comprueba tus resultados</h1>
+<h5 align="center">Consulta tú codigo PIN en tus SMS</h5>
+<br>
+<div class="submit-buttons">
+    <h4 style="margin-top: 80px">PIN:</h4>
+    <input type="text" id="name_input" name="name_input">
+    <br>
+    <button class="button button4" style="margin-right: 60px; margin-top: 120px">DESCARGAR RESULTADOS</button><button class="button button4">CERRAR</button>
+</div>
 </body>
+
+<footer class="footer-bot">
+    <div class="row">
+        <div class="column nav-item nav-separation font-weight-bold">
+            <a class="social-button" href="https://www.twitter.com"> <i class="fa fa-twitter" style="font-size:36px"></i></a>
+            <a class="social-button" href="https://www.instagram.com"> <i class="fa fa-instagram" style="font-size:36px"></i></a>
+            <a class="social-button" href="https://www.facebook.com"> <i class="fa fa-facebook" style="font-size:36px"></i></a>
+        </div>
+        <div class="column nav-item nav-separation font-weight-bold">
+            <h3>Clínica Sant Gervasi</h3>
+        </div>
+        <div class="column nav-item nav-separation">
+            <p>© 2021 Clínica sant gervasi</p>
+        </div>
+    </div>
+</footer>
+
 <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
 <script src="../main.js"></script>
 </html>
