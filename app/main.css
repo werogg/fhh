@@ -23,7 +23,6 @@
 
 .img-custom {
     background-color: white;
-    margin-bottom: 1.5rem;
 }
 
 .footer_bot {
@@ -99,4 +98,12 @@
 }
 .item4 {
     grid-area: d;
+}
+
+.col2-text {
+    margin-top: 60px;
+}
+
+.col3-text {
+    margin-top: 60px;
 }
