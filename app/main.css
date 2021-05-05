@@ -25,16 +25,6 @@
     background-color: white;
 }
 
-.footer_bot {
-    position: fixed;
-    left: 0;
-    bottom: 0;
-    width: 100%;
-    background-color: white;
-    color: #28323c;
-    text-align: center;
-}
-
 /* Clear floats after the columns */
 .row:after {
     content: "";
@@ -106,4 +96,12 @@
 
 .col3-text {
     margin-top: 60px;
+}
+
+a {
+    color: black;
+}
+
+a:hover {
+    color: black;
 }
