@@ -81,13 +81,15 @@
     margin: 4px 2px;
     cursor: pointer;
 }
-.button4 {border-radius: 12px;}
+.button4 {
+    border-radius: 12px;
+}
 
 .title-cite {
-    margin-top: 120px;
+    margin-top: 5%;
 }
 
 .confirm-text {
-    padding-top: 120px;
+    padding-top: 10%;
     text-align: center;
 }
