@@ -18,6 +18,16 @@
            <ul class="navbar-nav">
                <li class="nav-item nav-separation font-weight-bold"><a class="navbar-brand nav-custom" href="">{{ title }}</a></li>
                <li class="nav-separation"></li>
+               <li class="nav-separation dropdown">
+                   <a onclick="myFunction()" class="dropdown-toggle dropbtn nav-link">{{ treatments }}</a>
+                   <div id="myDropdown" class="dropdown-content">
+                       <a href="treatments/depresion.html">{{ tr1 }}</a>
+                       <a href="treatments/ansiedad.html">{{ tr2 }}</a>
+                       <a href="treatments/ataques_panico.html">{{ tr3 }}</a>
+                       <a href="treatments/tdah.html">{{ tr4 }}</a>
+                       <a href="treatments/insomnio.html">{{ tr5 }}</a>
+                   </div>
+               </li>
                <li class="nav-item nav-separation"><a class="nav-link nav-custom" href="cite/">{{ cite }}</a></li>
                <li class="nav-item nav-separation"><a class="nav-link nav-custom" href="consult/">{{ specialist }}</a></li>
                <li class="nav-item nav-separation"><a class="nav-link nav-custom" href="results/">{{ results }}</a></li>
@@ -69,26 +79,27 @@
                 </div>
             </div>
         </div>
+        <br>
+        <footer class="footer_bot">
+            <div class="container text-center">
+                <div class="row">
+                    <div class="column nav-item nav-separation font-weight-bold">
+                        <a class="social-button" href="https://www.twitter.com"> <i class="fa fa-twitter" style="font-size:36px"></i></a>
+                        <a class="social-button" href="https://www.instagram.com"> <i class="fa fa-instagram" style="font-size:36px"></i></a>
+                        <a class="social-button" href="https://www.facebook.com"> <i class="fa fa-facebook" style="font-size:36px"></i></a>
+                    </div>
+                    <div class="column nav-item nav-separation font-weight-bold">
+                        <h3>{{ title }}</h3>
+                    </div>
+                    <div class="column nav-item nav-separation">
+                        <p>{{ copy }}</p>
+                    </div>
+                </div>
+            </div>
+        </footer>
     </div>
-    <br>
 </body>
-<footer class="footer_bot">
-    <div class="container text-center">
-        <div class="row">
-            <div class="column nav-item nav-separation font-weight-bold">
-                <a class="social-button" href="https://www.twitter.com"> <i class="fa fa-twitter" style="font-size:36px"></i></a>
-                <a class="social-button" href="https://www.instagram.com"> <i class="fa fa-instagram" style="font-size:36px"></i></a>
-                <a class="social-button" href="https://www.facebook.com"> <i class="fa fa-facebook" style="font-size:36px"></i></a>
-            </div>
-            <div class="column nav-item nav-separation font-weight-bold">
-                <h3>Clínica Sant Gervasi</h3>
-            </div>
-            <div class="column nav-item nav-separation">
-                <p>© 2021 Clínica sant gervasi</p>
-            </div>
-        </div>
-    </div>
-</footer>
+
 
 <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
 <script src="main.js"></script>
