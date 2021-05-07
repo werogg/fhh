@@ -1,0 +1,13 @@
+.main_frame {
+    padding: 2.5%;
+}
+
+.main_frame div {
+    background-color: white;
+    padding: 1.2rem;
+    border-radius: 25px;
+}
+
+.header-background {
+    background-color: white;
+}
