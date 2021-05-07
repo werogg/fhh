@@ -141,6 +141,16 @@ select {
     display: block;
 }
 
+.white-box {
+    background-color: white;
+    border-radius: 25px;
+    padding: 2%;
+}
+
+.blue-box {
+
+}
+
 .dropdown-content a:hover {background-color: aliceblue}
 
 .show {display:block;}
