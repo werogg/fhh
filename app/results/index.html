@@ -41,16 +41,18 @@
 <h1 class="title-cite text-center">Comprueba tus resultados</h1>
 <h5 class="text-center">Consulta tú codigo PIN en tus SMS</h5>
 <br>
+<form action="download_results.html">
 <div style="margin: auto; width: 50%; text-align: center">
     <h4 style="margin-top: 2%">PIN:</h4>
-    <input type="text" id="name_input" name="name_input">
+    <input type="text" id="name_input" name="name_input" required>
     <br>
     <div style="margin-right: 2%; margin-top: 5%; margin-bottom: 150px">
-        <button class="button button4" role="link" onclick="window.location='download_results.html'">DESCARGAR RESULTADOS</button>
+        <button class="button button4" role="link" type="submit">DESCARGAR RESULTADOS</button>
         <button class="button button4">CERRAR</button>
     </div>
 
 </div>
+</form>
 </body>
 
 <footer class="footer_bot">

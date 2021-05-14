@@ -41,6 +41,7 @@
 <h1 class="title-cite" align="center">Haz tu consulta con nuestros especialistas</h1>
 <h5 align="center">Estarás en las mejores manos</h5>
 
+<form action="confirm_consult.html">
 <div class="wrapper">
     <div class="item1">
         <label for="appointment_type">Tipo de consulta:</label>
@@ -60,30 +61,31 @@
         </select>
         <br><br>
         <label for="date_select">Fecha:</label>
-        <input type="date" id="date_select" name="date_select" class="left_selects">
+        <input type="date" id="date_select" name="date_select" class="left_selects" required>
         <br><br>
         <label for="name_input">Nombre:</label>
-        <input type="text" id="name_input" name="name_input" class="left_selects">
+        <input type="text" id="name_input" name="name_input" class="left_selects" required>
         <br><br>
         <label for="dni_input">DNI:</label>
-        <input type="text" id="dni_input" name="dni_input" class="left_selects">
+        <input type="text" id="dni_input" name="dni_input" class="left_selects" required>
         <br><br>
         <label for="phone_input">Teléfono:</label>
-        <input type="text" id="phone_input" name="phone_input" class="left_selects">
+        <input type="text" id="phone_input" name="phone_input" class="left_selects" required>
     </div>
 
     <div class="item2">
-        <textarea class="text-input" id="text_input" name="text_input" rows="8"></textarea>
+        <textarea class="text-input" id="text_input" name="text_input" rows="8" required></textarea>
         <br><br>
-        <input class="button" type="file" id="myfile" name="myfile">
+        <input class="button" type="file" id="myfile" name="myfile" required>
         <br>
-        <button class="button button4" role="link" onclick="window.location='confirm_consult.html'">ENVIAR CONSULTA</button>
+        <button class="button button4" role="link" type="submit">ENVIAR CONSULTA</button>
     </div>
     <div class="item3"></div>
     <div class="item4">
 
     </div>
 </div>
+</form>
 </body>
 
 <footer class="footer_bot">
