@@ -51,10 +51,10 @@
             <br><br>
             <label for="specialist_type">Especialista:</label>
             <select name="specialist_type" id="specialist_type" class="left_selects">
-                <option value="pediatra">Pediatra</option>
-                <option value="osteopata">Osteopata</option>
-                <option value="enfermeria">Enfermeria</option>
-                <option value="cardiologia">Cardiología</option>
+                <option value="pediatra">Pediatra (Lu - Mi - Vi)</option>
+                <option value="psicologo">Psicólogo (Ma - Ju)</option>
+                <option value="psiquiatra">Psiquiatra (Ma - Vi)</option>
+                <option value="neurologo">Neurologo (Lu)</option>
             </select>
             <br><br>
             <label for="date_select">Fecha:</label>
@@ -100,4 +100,35 @@
 
 <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
 <script src="../main.js"></script>
+<script>
+    const validate = (dateString) => {
+        const day = (new Date(dateString)).getDay();
+        const sel = document.getElementById("specialist_type")
+        switch (sel.value) {
+            case 'pediatra':
+                return !(day === 0 || day === 6 || day === 2 || day === 4)
+            case 'psicologo':
+                return !(day === 0 || day === 6 || day === 1 || day === 3 || day === 5)
+            case 'psiquiatra':
+                return !(day === 0 || day === 6 || day === 1 || day === 3 || day === 4)
+            case 'neurologo':
+                return !(day === 0 || day === 6 || day === 2 || day === 3 || day === 4 || day === 5)
+        }
+    }
+
+    // Sets the value to '' in case of an invalid date
+    document.querySelector('#date_select').onchange = evt => {
+        if (!validate(evt.target.value)) {
+            evt.target.value = '';
+            alert('¡Esta fecha no está disponible!')
+        }
+    }
+
+    document.querySelector('#specialist_type').onchange = evt => {
+        const sel = document.getElementById("date_select")
+        if (sel.value !== '') {
+            sel.value = '';
+        }
+    }
+</script>
 </html>
